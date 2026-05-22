@@ -575,6 +575,7 @@ strong { font-weight: 700; }
 .price-card h3 { font-size: 1rem; font-family: 'DM Sans', sans-serif; font-weight: 700; }
 .price-card p { color: var(--muted); font-size: 13px; line-height: 1.6; }
 .price-card .btn { margin-top: auto; }
+.price-range-note { font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted); margin: 4px 0 12px; }
 
 /* ===================== DARK CTA BAR ===================== */
 .cta-bar {
