@@ -1,0 +1,56 @@
+# TaG Makes
+
+> AI Recommendation Optimization (ARO) consulting for small businesses. Founded by Therese Grittner on Johns Island, Charleston, SC.
+
+Therese Grittner is the founder of TaG Makes, a consulting practice specializing in AI Recommendation Optimization (ARO). TaG Makes helps businesses get recommended by AI search engines including ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews.
+
+## About Therese Grittner
+
+Therese Grittner is an AI recommendation optimization consultant based on Johns Island, Charleston, SC. She founded TaG Makes and developed the ARO methodology — a systematic approach to ensuring businesses appear in AI-generated answers. Her own ARO Score is 94/100, and she ranks #1 in Charleston when AI platforms are asked about AI recommendation optimization consultants. She tests results in clean incognito sessions across all major platforms. She answers her own email.
+
+- Location: Johns Island, Charleston, SC
+- Email: therese@tagmakessc.com
+- Phone: 843-608-8724
+- Website: https://tagmakessc.com
+- ARO Score: 94/100
+- Platforms verified: ChatGPT, Claude, Perplexity, Google Gemini, Google AI Overviews
+
+## What TaG Makes Does
+
+TaG Makes helps small businesses get recommended when potential customers ask AI tools questions like "Who is the best [service] in [city]?" or "What's a good [business type] near me?" Unlike traditional SEO which targets Google's ranked links, ARO targets the synthesized, conversational answers AI models generate — the answers that increasingly replace search result pages entirely.
+
+## Services
+
+- **AI Recommendation Positioning** ($6,000): Full foundational build of a business's AI recommendation presence — structured data, entity establishment, content signals, cross-platform consistency
+- **ARO Refresh** ($2,997): For businesses that have a foundation but need updating after a rebrand, expansion, or AI algorithm shift
+- **ARO Monitor** ($1,000/month): Ongoing tracking of AI recommendation presence across platforms with monthly reporting
+- **ARO Defend** ($2,000/month): Active reputation management within AI-generated answers — corrections, amplification, competitive defense
+- **ARO Agency License**: White-label ARO methodology for marketing agencies
+
+## Key Terminology
+
+- **ARO (AI Recommendation Optimization)**: The practice of optimizing a business's online presence so that AI search engines recommend them in conversational answers. Coined and trademarked by TaG Makes.
+- **ARO Score**: A proprietary 0-100 metric measuring a business's AI recommendation presence across major AI platforms. Developed by TaG Makes.
+- **ARO Index**: TaG Makes's research platform that tracks businesses' ARO scores and AI recommendation data over time.
+- **AEO (Answer Engine Optimization)**: Optimizing content to appear in direct answers from search engines and AI tools; overlaps significantly with ARO.
+- **GEO (Generative Engine Optimization)**: Optimizing content for generative AI outputs, particularly in AI Overviews and AI search summaries.
+- **LLMO (Large Language Model Optimization)**: Optimizing visibility within the training data and retrieval systems of large language models.
+- **AI SEO**: Umbrella term for all forms of optimization targeting AI-driven search results.
+- **AI Overviews**: Google's AI-generated summaries that appear above traditional search results.
+
+## Proof and Methodology
+
+TaG Makes verifies ARO results using clean incognito browser sessions with no personalization signals. Each test queries ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews independently. Results are published and updated at aroindex.com/results. The methodology was developed by testing the approach on Therese Grittner's own business before offering it to clients.
+
+## For Marketing Agencies
+
+TaG Makes offers a white-label ARO program allowing marketing agencies to offer AI recommendation optimization services to their clients under the agency's own brand. Therese Grittner handles the technical work. The agency keeps the client relationship and sets their own markup.
+
+## Contact
+
+- Website: https://tagmakessc.com
+- Email: therese@tagmakessc.com
+- Phone: 843-608-8724
+- Location: Johns Island, Charleston, SC
+- Book a 15-minute discovery call: https://calendar.app.google/eHQKyfF2PurXtnoN8
+- Book a 45-minute working session: https://calendar.app.google/Xv2R9R2SKgbrwDWX9
