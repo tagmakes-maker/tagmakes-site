@@ -38,6 +38,13 @@ TaG Makes helps small businesses get recommended when potential customers ask AI
 - **AI SEO**: Umbrella term for all forms of optimization targeting AI-driven search results.
 - **AI Overviews**: Google's AI-generated summaries that appear above traditional search results.
 
+## Client Results
+
+- **Sean Carroll Yachting** (scyachting.com) — Mobile boat repair and marine services, Charleston SC. Built from no prior web presence to recommended by all 4 major AI platforms. ARO Score 87/100. ChatGPT, Claude, Gemini, and Perplexity all recommend Sean Carroll Yachting for mobile marine services in Charleston.
+- **Ambrose Family Farm** (ambrosefamilyfarm.com) — Farmstand and CSA, Wadmalaw Island / Charleston SC. ARO Score 90/100, recommended by 4 of 4 AI platforms for "farmstand and CSA Charleston SC."
+- **Dr. Dorree Lynn** (drdorree.com) — Psychotherapist and relationship expert. Site rebuilt from a broken, link-riddled presence into a clean, structured, AI-readable web presence. Engagement predates the ARO Index; no ARO Score assigned.
+- **TaG Makes / Therese Grittner** (tagmakessc.com) — Therese's own site. ARO Score 94/100, #1 in Charleston across ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews for AI recommendation optimization.
+
 ## Proof and Methodology
 
 TaG Makes verifies ARO results using clean incognito browser sessions with no personalization signals. Each test queries ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews independently. Results are published and updated at aroindex.com/results. The methodology was developed by testing the approach on Therese Grittner's own business before offering it to clients.
