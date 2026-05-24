@@ -5,14 +5,8 @@
 /about/         /about.html     301
 /services/      /services.html  301
 /agencies/      /agencies.html  301
+/portfolio/     /portfolio.html 301
+/blog/          /blog.html      301
 /glossary/      /glossary.html  301
 /faq/           /faq.html       301
 /contact/       /contact.html   301
-
-# Clean URL support (optional — Cloudflare Pages handles .html automatically)
-/about          /about.html     200
-/services       /services.html  200
-/agencies       /agencies.html  200
-/glossary       /glossary.html  200
-/faq            /faq.html       200
-/contact        /contact.html   200
