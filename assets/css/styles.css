@@ -745,6 +745,14 @@ strong { font-weight: 700; }
 .about-photo {
   position: relative;
 }
+.about-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(ellipse 100% 60% at 50% 85%, rgba(233,42,151,0.10) 0%, transparent 70%);
+  pointer-events: none;
+}
 .about-photo img {
   border-radius: var(--radius-lg);
   width: 100%;
