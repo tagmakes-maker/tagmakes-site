@@ -750,6 +750,7 @@ strong { font-weight: 700; }
   width: 100%;
   object-fit: cover;
   max-height: 540px;
+  object-position: center 15%;
 }
 .about-photo-caption {
   position: absolute;
