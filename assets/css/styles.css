@@ -744,6 +744,7 @@ strong { font-weight: 700; }
 }
 .about-photo {
   position: relative;
+  max-width: 480px;
 }
 .about-photo::after {
   content: '';
