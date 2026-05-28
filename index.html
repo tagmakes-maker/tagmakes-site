@@ -29,13 +29,27 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://tagmakessc.com/#website",
+        "name": "TaG Makes",
+        "url": "https://tagmakessc.com",
+        "publisher": {
+          "@id": "https://tagmakessc.com/#organization"
+        }
+      },
+      {
         "@type": ["LocalBusiness", "ProfessionalService"],
         "@id": "https://tagmakessc.com/#organization",
         "name": "TaG Makes",
+        "description": "TaG Makes helps businesses get recommended by AI assistants — ChatGPT, Claude, Perplexity, and Gemini — through AI Recommendation Optimization (ARO). Based in Charleston, SC. Serving clients nationally.",
         "url": "https://tagmakessc.com",
         "telephone": "843-608-8724",
         "email": "therese@tagmakessc.com",
         "foundingDate": "2025",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tagmakessc.com/assets/images/logo.png"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Johns Island",
@@ -58,13 +72,6 @@
           "@id": "https://tagmakessc.com/#therese",
           "name": "Therese Grittner"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "5",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "sameAs": [
           "https://www.linkedin.com/in/therese-grittner",
           "https://share.google/cJsWTu8a8A2cAK7sJ"
@@ -74,6 +81,7 @@
         "@type": "Service",
         "@id": "https://tagmakessc.com/#aro-service",
         "name": "AI Recommendation Optimization (ARO)",
+        "description": "ARO rebuilds how your business appears in AI assistant responses — from positioning and schema to entity cleanup and answer-style content — so ChatGPT, Claude, Perplexity, and Gemini recommend you by name.",
         "serviceType": "AI Recommendation Optimization",
         "url": "https://tagmakessc.com/services.html",
         "provider": {
@@ -85,10 +93,42 @@
         }
       },
       {
+        "@type": "HowTo",
+        "@id": "https://tagmakessc.com/#aro-method",
+        "name": "How to Get Recommended by AI Assistants",
+        "description": "The three-step ARO methodology for getting your business recommended by ChatGPT, Claude, Perplexity, and Gemini.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": "1",
+            "name": "Measure",
+            "text": "Start with your ARO Score. The ARO Index shows where AI understands you, where it doesn't, and who it recommends instead."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "2",
+            "name": "Fix",
+            "text": "Rebuild the parts that matter: positioning, structure, schema, the answer-style content AI pulls from. The full AI Recommendation Positioning build."
+          },
+          {
+            "@type": "HowToStep",
+            "position": "3",
+            "name": "Prove",
+            "text": "Re-score. You watch the number move. That is the difference between strategy and a guess."
+          }
+        ]
+      },
+      {
         "@type": "WebPage",
         "@id": "https://tagmakessc.com/#webpage",
         "url": "https://tagmakessc.com",
         "name": "TaG Makes | AI Recommendation Optimization",
+        "isPartOf": {
+          "@id": "https://tagmakessc.com/#website"
+        },
+        "about": {
+          "@id": "https://tagmakessc.com/#aro-service"
+        },
         "author": {
           "@id": "https://tagmakessc.com/#therese"
         },
@@ -97,7 +137,33 @@
         },
         "mainEntity": {
           "@id": "https://tagmakessc.com/#aro-service"
-        }
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".proof-section", ".steps"]
+        },
+        "mentions": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "ChatGPT",
+            "url": "https://chatgpt.com"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Claude",
+            "url": "https://claude.ai"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Perplexity",
+            "url": "https://perplexity.ai"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Gemini",
+            "url": "https://gemini.google.com"
+          }
+        ]
       }
     ]
   }
