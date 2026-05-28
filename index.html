@@ -29,23 +29,41 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["LocalBusiness", "ProfessionalService"],
         "@id": "https://tagmakessc.com/#organization",
         "name": "TaG Makes",
         "url": "https://tagmakessc.com",
         "telephone": "843-608-8724",
         "email": "therese@tagmakessc.com",
+        "foundingDate": "2025",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Johns Island",
           "addressLocality": "Charleston",
           "addressRegion": "SC",
+          "postalCode": "29455",
           "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.6938,
+          "longitude": -80.0537
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
         },
         "founder": {
           "@type": "Person",
           "@id": "https://tagmakessc.com/#therese",
           "name": "Therese Grittner"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "sameAs": [
           "https://www.linkedin.com/in/therese-grittner",
