@@ -1152,7 +1152,7 @@ strong { font-weight: 700; }
 .screenshot-label { font-family: 'Space Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 8px; }
 .screenshot-label.after { color: var(--pink); }
 .screenshot-wrap img { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--border); display: block; }
-.screenshot-wrap.preview img { max-height: 180px; object-fit: cover; object-position: top; }
+.screenshot-wrap.preview img { width: 100%; }
 @media (max-width: 600px) { .story-screenshots { grid-template-columns: 1fr; } }
 
 /* ===================== BLOG PAGE ===================== */
