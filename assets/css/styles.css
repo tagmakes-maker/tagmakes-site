@@ -710,6 +710,9 @@ strong { font-weight: 700; }
 }
 .footer-brand img { margin-bottom: 14px; }
 .footer-brand p { font-size: 13px; line-height: 1.7; color: #9A968F; }
+.footer-social { display: flex; gap: 16px; margin-top: 12px; }
+.footer-social a { font-size: 13px; color: #6B6860; transition: color 0.15s; }
+.footer-social a:hover { color: #F4F2EE; }
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

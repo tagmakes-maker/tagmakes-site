@@ -23,55 +23,65 @@
   <meta name="twitter:title" content="Therese Grittner | AI Recommendation Optimization Researcher | Charleston SC">
   <meta name="twitter:description" content="Therese Grittner helps businesses get recommended by ChatGPT, Claude, Perplexity, and Gemini. ARO Score 94. #1 in Charleston.">
 
-  <!-- JSON-LD Schemas -->
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "TaG Makes | AI Recommendation Optimization",
-    "url": "https://tagmakessc.com",
-    "author": {
-      "@type": "Person",
-      "name": "Therese Grittner"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "TaG Makes"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "AI Recommendation Optimization (ARO)",
-    "provider": {
-      "@type": "Person",
-      "name": "Therese Grittner"
-    },
-    "serviceType": "AI Recommendation Optimization",
-    "url": "https://tagmakessc.com/services.html"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "TaG Makes",
-    "url": "https://tagmakessc.com",
-    "telephone": "843-608-8724",
-    "email": "therese@tagmakessc.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Johns Island",
-      "addressLocality": "Charleston",
-      "addressRegion": "SC",
-      "addressCountry": "US"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Therese Grittner"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tagmakessc.com/#organization",
+        "name": "TaG Makes",
+        "url": "https://tagmakessc.com",
+        "telephone": "843-608-8724",
+        "email": "therese@tagmakessc.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Johns Island",
+          "addressLocality": "Charleston",
+          "addressRegion": "SC",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@type": "Person",
+          "@id": "https://tagmakessc.com/#therese",
+          "name": "Therese Grittner"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/therese-grittner",
+          "https://share.google/cJsWTu8a8A2cAK7sJ"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://tagmakessc.com/#aro-service",
+        "name": "AI Recommendation Optimization (ARO)",
+        "serviceType": "AI Recommendation Optimization",
+        "url": "https://tagmakessc.com/services.html",
+        "provider": {
+          "@id": "https://tagmakessc.com/#organization"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://tagmakessc.com/#webpage",
+        "url": "https://tagmakessc.com",
+        "name": "TaG Makes | AI Recommendation Optimization",
+        "author": {
+          "@id": "https://tagmakessc.com/#therese"
+        },
+        "publisher": {
+          "@id": "https://tagmakessc.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://tagmakessc.com/#aro-service"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -101,6 +111,7 @@
   </nav>
 
   <!-- HERO -->
+  <main>
   <section class="hero hero-split dot-grid">
     <div class="hero-split-left">
       <div class="eyebrow">AI RECOMMENDATION OPTIMIZATION</div>
@@ -331,14 +342,20 @@
   </section>
 
   <!-- FOOTER -->
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          
+
           <p>Johns Island, Charleston SC</p>
           <p>therese@tagmakessc.com</p>
           <p>843-608-8724</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/therese-grittner" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://share.google/cJsWTu8a8A2cAK7sJ" target="_blank" rel="noopener">Google Business ↗</a>
+          </div>
         </div>
         <div class="footer-links">
           <a href="about.html">About</a>
