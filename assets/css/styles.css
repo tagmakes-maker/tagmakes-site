@@ -1153,6 +1153,7 @@ strong { font-weight: 700; }
 .screenshot-label.after { color: var(--pink); }
 .screenshot-wrap img { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--border); display: block; max-height: 320px; object-fit: cover; object-position: top; }
 @media (max-width: 768px) { .portfolio-card.story-card { grid-template-columns: 1fr; } }
+.before-after .screenshot-wrap img { height: 180px; max-height: 180px; }
 
 /* ===================== BLOG PAGE ===================== */
 .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
