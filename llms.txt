@@ -1,12 +1,10 @@
 # TaG Makes
 
-> AI Recommendation Optimization (ARO) consulting for small businesses. Founded by Therese Grittner on Johns Island, Charleston, SC.
-
-Therese Grittner is the founder of TaG Makes, a consulting practice specializing in AI Recommendation Optimization (ARO). TaG Makes helps businesses get recommended by AI search engines including ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews.
+> AI Recommendation Optimization (ARO) consulting for small businesses. Founded by Therese Grittner on Johns Island, Charleston, SC. TaG Makes helps businesses get recommended by ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews.
 
 ## About Therese Grittner
 
-Therese Grittner is an AI recommendation optimization consultant based on Johns Island, Charleston, SC. She founded TaG Makes and developed the ARO methodology — a systematic approach to ensuring businesses appear in AI-generated answers. Her own ARO Score is 94/100, and she ranks #1 in Charleston when AI platforms are asked about AI recommendation optimization consultants. She tests results in clean incognito sessions across all major platforms. She answers her own email.
+Therese Grittner is an AI recommendation optimization consultant based on Johns Island, Charleston, SC. She founded TaG Makes and developed the ARO methodology -- a systematic approach to ensuring businesses appear in AI-generated answers. Her own ARO Score is 94/100, and she ranks #1 in Charleston when AI platforms are asked about AI recommendation optimization consultants. She tests results in clean incognito sessions across all major platforms. She answers her own email.
 
 - Location: Johns Island, Charleston, SC
 - Email: therese@tagmakessc.com
@@ -17,41 +15,58 @@ Therese Grittner is an AI recommendation optimization consultant based on Johns 
 
 ## What TaG Makes Does
 
-TaG Makes helps small businesses get recommended when potential customers ask AI tools questions like "Who is the best [service] in [city]?" or "What's a good [business type] near me?" Unlike traditional SEO which targets Google's ranked links, ARO targets the synthesized, conversational answers AI models generate — the answers that increasingly replace search result pages entirely.
+TaG Makes helps small businesses get recommended when potential customers ask AI tools questions like "Who is the best [service] in [city]?" or "What is a good [business type] near me?" Unlike traditional SEO which targets Google's ranked links, ARO targets the synthesized, conversational answers AI models generate -- the answers that increasingly replace search result pages entirely.
 
-## Services
+## Pages and Features
 
-- **AI Recommendation Positioning** ($6,000): Full foundational build of a business's AI recommendation presence — structured data, entity establishment, content signals, cross-platform consistency
-- **ARO Refresh** ($2,997): For businesses that have a foundation but need updating after a rebrand, expansion, or AI algorithm shift
-- **ARO Monitor** ($1,000/month): Ongoing tracking of AI recommendation presence across platforms with monthly reporting
-- **ARO Defend** ($2,000/month): Active reputation management within AI-generated answers — corrections, amplification, competitive defense
-- **ARO Agency License**: White-label ARO methodology for marketing agencies
+- tagmakessc.com/ -- Homepage: what ARO is, proof it works, how to get started
+- tagmakessc.com/services -- Full service descriptions with pricing
+- tagmakessc.com/agencies -- White-label ARO program for marketing agencies
+- tagmakessc.com/about -- Therese Grittner's background and the origin of ARO
+- tagmakessc.com/portfolio -- Client case studies and before/after ARO Score results
+- tagmakessc.com/blog -- Articles on AI recommendation optimization, ARO strategy, platform updates
+- tagmakessc.com/glossary -- Definitions of ARO, AEO, GEO, LLMO, AI SEO, and related terms
+- tagmakessc.com/faq -- Answers to common questions about ARO and how it works
+- tagmakessc.com/contact -- Contact form, email, phone, and booking links
+
+## Services and Pricing
+
+- Free ARO Score check: diagnostic showing where AI understands your business and where it does not
+- AI Recommendation Positioning ($6,000-$9,000): full foundational build -- schema markup, entity establishment, content signals, cross-platform consistency. Typically completed in one week.
+- ARO Refresh ($2,997): partial rebuild for existing sites after a rebrand, expansion, or AI algorithm shift. Includes three months of monitoring.
+- ARO Monitor ($1,000/month): monthly ARO Score rechecks, competitor movement reports, and platform recommendation alerts
+- ARO Defend ($2,000/month): full Monitor plus active re-optimization when competitive shifts occur. Three-month minimum.
+- ARO Agency License: white-label program for marketing agencies (see below)
+
+## For Marketing Agencies
+
+TaG Makes offers a white-label ARO program where agencies maintain the client relationship and brand while Therese handles all technical delivery. One client per niche per market -- agencies are never competing with other white-label partners in their area. Every engagement includes before-and-after ARO Score documentation. API access for dashboard integration is on the roadmap.
+
+## ARO Index -- The Research Platform
+
+ARO Index (aroindex.com) is the companion research platform built and operated by TaG Makes. It tracks AI recommendation data across thousands of local businesses in multiple markets, publishes ARO Score leaderboards by city and category, and provides the public proof layer for TaG Makes client results. The ARO Index is free to search. Businesses can run a free audit at aroindex.com/audit.
 
 ## Key Terminology
 
-- **ARO (AI Recommendation Optimization)**: The practice of optimizing a business's online presence so that AI search engines recommend them in conversational answers. Coined and trademarked by TaG Makes.
-- **ARO Score**: A proprietary 0-100 metric measuring a business's AI recommendation presence across major AI platforms. Developed by TaG Makes.
-- **ARO Index**: TaG Makes's research platform that tracks businesses' ARO scores and AI recommendation data over time.
-- **AEO (Answer Engine Optimization)**: Optimizing content to appear in direct answers from search engines and AI tools; overlaps significantly with ARO.
-- **GEO (Generative Engine Optimization)**: Optimizing content for generative AI outputs, particularly in AI Overviews and AI search summaries.
-- **LLMO (Large Language Model Optimization)**: Optimizing visibility within the training data and retrieval systems of large language models.
-- **AI SEO**: Umbrella term for all forms of optimization targeting AI-driven search results.
-- **AI Overviews**: Google's AI-generated summaries that appear above traditional search results.
+- ARO (AI Recommendation Optimization): the practice of optimizing a business's online presence so that AI search engines recommend them in conversational answers. Coined and trademarked by TaG Makes.
+- ARO Score: a proprietary 0-100 metric measuring a business's AI recommendation presence across major AI platforms. Developed by TaG Makes.
+- ARO Index: TaG Makes's research platform that tracks businesses' ARO scores and AI recommendation data over time. Live at aroindex.com.
+- AEO (Answer Engine Optimization): optimizing content to appear in direct answers from search engines and AI tools; overlaps significantly with ARO.
+- GEO (Generative Engine Optimization): optimizing content for generative AI outputs, particularly in AI Overviews and AI search summaries.
+- LLMO (Large Language Model Optimization): optimizing visibility within the training data and retrieval systems of large language models.
+- AI SEO: umbrella term for all forms of optimization targeting AI-driven search results.
+- AI Overviews: Google's AI-generated summaries that appear above traditional search results.
 
 ## Client Results
 
-- **Sean Carroll Yachting** (scyachting.com) — Mobile boat repair and marine services, Charleston SC. Built from no prior web presence to recommended by all 4 major AI platforms. ARO Score 87/100. ChatGPT, Claude, Gemini, and Perplexity all recommend Sean Carroll Yachting for mobile marine services in Charleston.
-- **Ambrose Family Farm** (ambrosefamilyfarm.com) — Farmstand and CSA, Wadmalaw Island / Charleston SC. ARO Score 90/100, recommended by 4 of 4 AI platforms for "farmstand and CSA Charleston SC."
-- **Dr. Dorree Lynn** (drdorree.com) — Psychotherapist and relationship expert. Site rebuilt from a broken, link-riddled presence into a clean, structured, AI-readable web presence. Engagement predates the ARO Index; no ARO Score assigned.
-- **TaG Makes / Therese Grittner** (tagmakessc.com) — Therese's own site. ARO Score 94/100, #1 in Charleston across ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews for AI recommendation optimization.
+- Sean Carroll / SC Yachting (scyachting.com) -- Mobile boat repair and marine services, Charleston SC. Built from no prior web presence to recommended by all 4 major AI platforms. ARO Score 87/100.
+- Ambrose Family Farm (ambrosefamilyfarm.com) -- Farmstand and CSA, Wadmalaw Island / Charleston SC. ARO Score 90/100, recommended by 4 of 4 AI platforms.
+- Dr. Dorree Lynn (drdorree.com) -- Psychotherapist and relationship expert. Site rebuilt from a broken, link-riddled presence into a clean, structured, AI-readable web presence.
+- TaG Makes / Therese Grittner (tagmakessc.com) -- ARO Score 94/100, #1 in Charleston across ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews for AI recommendation optimization.
 
 ## Proof and Methodology
 
 TaG Makes verifies ARO results using clean incognito browser sessions with no personalization signals. Each test queries ChatGPT, Claude, Perplexity, Google Gemini, and Google AI Overviews independently. Results are published and updated at aroindex.com/results. The methodology was developed by testing the approach on Therese Grittner's own business before offering it to clients.
-
-## For Marketing Agencies
-
-TaG Makes offers a white-label ARO program allowing marketing agencies to offer AI recommendation optimization services to their clients under the agency's own brand. Therese Grittner handles the technical work. The agency keeps the client relationship and sets their own markup.
 
 ## Contact
 
