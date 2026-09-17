@@ -50,8 +50,18 @@ if (prefersReducedMotion) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
+        const el = e.target;
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+        // Clear the transform once the reveal finishes — a lingering non-"none"
+        // transform creates a stacking context that traps absolutely-positioned
+        // overlay content (like expandable cards) behind later sections.
+        el.addEventListener('transitionend', function clearTransform(ev) {
+          if (ev.propertyName === 'transform') {
+            el.style.transform = '';
+            el.removeEventListener('transitionend', clearTransform);
+          }
+        });
         observer.unobserve(e.target);
       }
     });
