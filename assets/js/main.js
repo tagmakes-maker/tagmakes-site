@@ -59,8 +59,8 @@ if (prefersReducedMotion) {
 
   revealTargets.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(18px)';
-    el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+    el.style.transform = 'translateY(36px)';
+    el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
     observer.observe(el);
   });
 }
