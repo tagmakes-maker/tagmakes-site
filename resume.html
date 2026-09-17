@@ -151,7 +151,9 @@
     .card.expandable {
       position: relative;
       cursor: pointer;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      transform: scale(1);
+      transform-origin: center top;
+      transition: border-color 0.3s ease, box-shadow 0.35s ease, transform 0.35s ease, background 0.35s ease;
     }
     .card.expandable::after {
       content: '+';
@@ -168,8 +170,12 @@
     .card.expandable:focus-within,
     .card.expandable.is-open {
       border-color: var(--pink);
-      box-shadow: var(--shadow-lift);
+      background: #1D1D24;
+      box-shadow: var(--shadow-lift), 0 0 40px rgba(233,42,151,0.45), 0 0 0 1px rgba(233,42,151,0.15);
       outline: none;
+      transform: scale(1.06);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
       z-index: 30;
     }
     .card.expandable:hover::after,
@@ -183,7 +189,7 @@
       left: -1.5px;
       right: -1.5px;
       top: 100%;
-      background: var(--surface);
+      background: #1D1D24;
       border: 1.5px solid var(--pink);
       border-top: none;
       border-radius: 0 0 var(--radius-md) var(--radius-md);
@@ -191,7 +197,7 @@
       max-height: 0;
       opacity: 0;
       overflow: hidden;
-      box-shadow: var(--shadow-lift);
+      box-shadow: var(--shadow-lift), 0 12px 32px rgba(233,42,151,0.3);
       transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
       pointer-events: none;
     }
