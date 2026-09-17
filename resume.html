@@ -130,6 +130,85 @@
     section#print-work .glossary-grid { grid-template-columns: repeat(4, 1fr) !important; }
     section#print-work .card { padding: 4px 6px !important; }
     section#print-work p { font-size: 8px !important; }
+    .card.expandable::after { display: none !important; }
+    .card-more {
+      position: static !important;
+      max-height: none !important;
+      opacity: 1 !important;
+      overflow: visible !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 3px 0 0 !important;
+      pointer-events: auto !important;
+    }
+    .card-more p { display: none !important; }
+    .card-more a.portfolio-link { display: inline-block !important; margin-top: 2px !important; font-size: 8px !important; background: transparent !important; }
+  </style>
+
+  <!-- Rollover expand: cards reveal more detail + links on hover, tap, or keyboard focus -->
+  <style>
+    .card.expandable {
+      position: relative;
+      cursor: pointer;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card.expandable::after {
+      content: '+';
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      font-family: 'Space Mono', monospace;
+      font-size: 15px;
+      line-height: 1;
+      color: var(--muted);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .card.expandable:hover,
+    .card.expandable:focus-within,
+    .card.expandable.is-open {
+      border-color: var(--pink);
+      box-shadow: var(--shadow-lift);
+      outline: none;
+      z-index: 30;
+    }
+    .card.expandable:hover::after,
+    .card.expandable:focus-within::after,
+    .card.expandable.is-open::after {
+      color: var(--pink);
+      transform: rotate(45deg);
+    }
+    .card-more {
+      position: absolute;
+      left: -1.5px;
+      right: -1.5px;
+      top: 100%;
+      background: var(--surface);
+      border: 1.5px solid var(--pink);
+      border-top: none;
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      padding: 0 20px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      box-shadow: var(--shadow-lift);
+      transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
+      pointer-events: none;
+    }
+    .card-more p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; }
+    .card-more a.portfolio-link { display: inline-block; margin-top: 10px; }
+    .card.expandable:hover .card-more,
+    .card.expandable:focus-within .card-more,
+    .card.expandable.is-open .card-more {
+      max-height: 260px;
+      opacity: 1;
+      padding: 14px 20px 18px;
+      pointer-events: auto;
+    }
+    @media (hover: none) {
+      .card.expandable::after { content: 'tap for more'; font-size: 9px; letter-spacing: 0.04em; top: 22px; }
+      .card.expandable.is-open::after { content: 'tap to close'; transform: none; }
+    }
   </style>
 </head>
 <body>
@@ -185,25 +264,45 @@
         <h2>Ways to work together.</h2>
       </div>
       <div class="glossary-grid">
-        <div class="card">
+        <div class="card expandable">
           <h3>Fractional AI Search Lead</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Embedded part-time with a marketing or product team, owning AI recommendation strategy the way a fractional CMO owns growth.</p>
+          <div class="card-more">
+            <p>Weekly cadence, embedded like a team member: Slack or standups, a shared roadmap, and reporting tied to ARO Score movement instead of vanity metrics. A common fit for teams that need this covered but aren't ready for a full-time hire.</p>
+            <a href="https://calendar.app.google/eHQKyfF2PurXtnoN8" class="portfolio-link" target="_blank" rel="noopener">Book a 15-minute call &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3>SME Advisory</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Office hours and strategy calls for teams building their own AI-recommendation practice, brought in to close a specific knowledge gap.</p>
+          <div class="card-more">
+            <p>Async review plus live calls, scoped to the gap: auditing an existing AI strategy, running a workshop, or acting as technical reviewer on someone else's AI-recommendation project.</p>
+            <a href="https://calendar.app.google/eHQKyfF2PurXtnoN8" class="portfolio-link" target="_blank" rel="noopener">Book a 15-minute call &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3>Audit and Roadmap</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">A full ARO Score audit across ChatGPT, Claude, Gemini, and Perplexity, plus a fix plan ranked by impact.</p>
+          <div class="card-more">
+            <p>Turnaround in days, not weeks. Deliverable is a scored report across all four models plus a fix list ranked by expected impact, the same format used on every engagement in Selected Work below.</p>
+            <a href="https://aroindex.com" class="portfolio-link" target="_blank" rel="noopener">Run your own ARO Score &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3>Full Build</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">End-to-end AI Recommendation Positioning: schema, entity cleanup, and answer-style content, implemented start to finish.</p>
+          <div class="card-more">
+            <p>Typical scope runs two to six weeks depending on site size: positioning, information architecture, schema, entity cleanup, and the answer-style content AI models actually pull from.</p>
+            <a href="services.html" class="portfolio-link">See scope and process &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3>Agency White-Label</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">TaG Makes runs the AI optimization work behind an agency's existing client relationship. Agency keeps the client and the markup.</p>
+          <div class="card-more">
+            <p>Agency keeps the client relationship and the markup; TaG Makes runs the audit and the fix work behind the scenes, branded however the agency wants it.</p>
+            <a href="agencies.html" class="portfolio-link">Agency partner details &rarr;</a>
+          </div>
         </div>
       </div>
     </div>
@@ -218,69 +317,99 @@
       </div>
       <div class="glossary-grid">
 
-        <div class="card">
+        <div class="card expandable">
           <h3>ARO Index</h3>
           <p class="mono" style="font-size:11px; color:var(--teal); margin-top:6px;">FOUNDER &amp; LEAD RESEARCHER</p>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Public research leaderboard testing real local businesses against ChatGPT, Claude, Gemini, and Perplexity. 22,936 audits across 114 tracked markets, 79 live on the public leaderboard, as of Sept 17, 2026. Methodology is versioned and published.</p>
           <p class="mono" style="font-size:11px; color:var(--muted); margin-top:10px;">DOI 10.5281/zenodo.21582986 &middot; second dataset in progress</p>
-          <a href="https://aroindex.com" class="portfolio-link" target="_blank" rel="noopener">aroindex.com &rarr;</a>
+          <div class="card-more">
+            <p>Every methodology version is documented publicly: what counts as a selection, how ties are broken, what gets excluded. Nothing about the score is a black box.</p>
+            <a href="https://aroindex.com" class="portfolio-link" target="_blank" rel="noopener">aroindex.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>TaG Makes</h3>
           <p class="mono" style="font-size:11px; color:var(--teal); margin-top:6px;">PROOF OF CONCEPT</p>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">This site. ARO Score moved from 20 to 94, #1 in Charleston across all four AI platforms, every ranking tested in incognito.</p>
-          <a href="portfolio.html" class="portfolio-link">View results &rarr;</a>
+          <div class="card-more">
+            <p>Every ranking screenshotted and dated on the results page, run in a clean incognito session so nothing is cached, personalized, or coached toward a specific answer.</p>
+            <a href="portfolio.html" class="portfolio-link">View results &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>MAEVYN</h3>
           <p class="mono" style="font-size:11px; color:var(--teal); margin-top:6px;">CUSTOM BUILD &middot; IN PROGRESS</p>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Stylist discovery and booking platform, built as a full product, not a template: matching engine, booking flow, and schema built in from day one.</p>
-          <a href="https://maevyn.pro" class="portfolio-link" target="_blank" rel="noopener">maevyn.pro &rarr;</a>
+          <div class="card-more">
+            <p>Built on React Router v7 with server-rendered public pages, so the marketplace itself stays crawlable and answerable by AI, not just humans.</p>
+            <a href="https://maevyn.pro" class="portfolio-link" target="_blank" rel="noopener">maevyn.pro &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>TIMELESS by Dr. Jerry Renato</h3>
           <p class="mono" style="font-size:11px; color:var(--teal); margin-top:6px;">BRAND BUILD</p>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Wellness and longevity education brand built with hands-on support end to end: positioning, site, and AI-recommendation structure built together instead of bolted on after launch.</p>
-          <a href="https://timelessbydrjerry.com" class="portfolio-link" target="_blank" rel="noopener">timelessbydrjerry.com &rarr;</a>
+          <div class="card-more">
+            <p>Every claim on the site runs through a compliance pass first: no diagnose or cure language, educator framing throughout, protecting Dr. Renato's chiropractic license.</p>
+            <a href="https://timelessbydrjerry.com" class="portfolio-link" target="_blank" rel="noopener">timelessbydrjerry.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Sean Carroll Yachting</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">ARO refresh for a mobile marine service in Charleston. Score moved from 87 to 94; all four models now recommend it by name.</p>
-          <a href="https://scyachting.com" class="portfolio-link" target="_blank" rel="noopener">scyachting.com &rarr;</a>
+          <div class="card-more">
+            <p>The buyer query tested was a real one: "mobile marine service Charleston SC." All four models now name this business first, not just somewhere in the answer.</p>
+            <a href="https://scyachting.com" class="portfolio-link" target="_blank" rel="noopener">scyachting.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Ambrose Family Farm</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">ARO optimization for a farmstand and CSA on Wadmalaw Island. Score 90, ranking #1 for farmstand and CSA searches in Charleston.</p>
-          <a href="https://ambrosefamilyfarm.com" class="portfolio-link" target="_blank" rel="noopener">ambrosefamilyfarm.com &rarr;</a>
+          <div class="card-more">
+            <p>Optimized around the actual language buyers use for a farmstand and CSA, not the terms the business used internally.</p>
+            <a href="https://ambrosefamilyfarm.com" class="portfolio-link" target="_blank" rel="noopener">ambrosefamilyfarm.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Frostbite Farms</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Full site build and ARO foundation for a classical dressage and horse-starting operation in North Augusta. Score 90.</p>
-          <a href="https://fbfnaugusta.com" class="portfolio-link" target="_blank" rel="noopener">fbfnaugusta.com &rarr;</a>
+          <div class="card-more">
+            <p>Structured for AI recommendation from the first commit: schema and entity signals went in during the build, not bolted on after launch.</p>
+            <a href="https://fbfnaugusta.com" class="portfolio-link" target="_blank" rel="noopener">fbfnaugusta.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Sailor Craft Knots</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">ARO refresh for a one-person maker business. Moved from 55 to 76 on the primary query, 95 on the direct buyer query.</p>
-          <a href="https://sailorcraftknots.com" class="portfolio-link" target="_blank" rel="noopener">sailorcraftknots.com &rarr;</a>
+          <div class="card-more">
+            <p>One-person business, no marketing budget. Proof that the fixes that move an ARO Score aren't about ad spend.</p>
+            <a href="https://sailorcraftknots.com" class="portfolio-link" target="_blank" rel="noopener">sailorcraftknots.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Myles Trudell Architect</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Full ARO build for a residential architecture firm: schema markup, FAQ layer, GBP sync. Score 94, all four models recommending by name.</p>
-          <a href="https://mylestrudell.com" class="portfolio-link" target="_blank" rel="noopener">mylestrudell.com &rarr;</a>
+          <div class="card-more">
+            <p>Rebuilt the FAQ layer specifically to answer the questions AI models weigh when deciding who to recommend for residential architecture.</p>
+            <a href="https://mylestrudell.com" class="portfolio-link" target="_blank" rel="noopener">mylestrudell.com &rarr;</a>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="card expandable">
           <h3>Out on a Limb</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">ARO refresh following a full site rebuild. Moved from 54 (2 of 4 models) to 85 (4 of 4) on the same buyer query.</p>
-          <a href="https://outonalimbcircus.com" class="portfolio-link" target="_blank" rel="noopener">outonalimbcircus.com &rarr;</a>
+          <div class="card-more">
+            <p>Same buyer query, tested before and after the rebuild: proof the score moves with structure, not just time.</p>
+            <a href="https://outonalimbcircus.com" class="portfolio-link" target="_blank" rel="noopener">outonalimbcircus.com &rarr;</a>
+          </div>
         </div>
 
       </div>
@@ -295,21 +424,37 @@
         <h2>The stack behind the work.</h2>
       </div>
       <div class="glossary-grid">
-        <div class="card">
+        <div class="card expandable">
           <h3 style="font-size:0.95rem;">AI Platforms &amp; APIs</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">OpenAI (ChatGPT) API &middot; Claude API incl. Message Batches &middot; Gemini API incl. batch generation &middot; Perplexity Sonar API &middot; Claude Code multi-agent workflows</p>
+          <div class="card-more">
+            <p>Runs the production audit and census pipelines calling all four providers directly, including asynchronous batch jobs for Claude and Gemini at scale, orchestrated with multi-agent Claude Code workflows.</p>
+            <a href="https://aroindex.com" class="portfolio-link" target="_blank" rel="noopener">See it in production &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3 style="font-size:0.95rem;">Infrastructure</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">Cloudflare Workers, Pages, KV &middot; Supabase Postgres and pg_cron &middot; Railway &middot; Stripe &middot; Resend &middot; Rewardful &middot; Serper</p>
+          <div class="card-more">
+            <p>Built and maintains the full stack running ARO Index and TaG Makes in production: cron-driven batch pipelines, Stripe billing, and transactional email.</p>
+            <a href="https://aroindex.com/methodology" class="portfolio-link" target="_blank" rel="noopener">How it's built &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3 style="font-size:0.95rem;">Web</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">HTML/CSS/JS &middot; JSON-LD schema (LocalBusiness, Service, FAQPage, Person) &middot; WordPress &middot; Wix &middot; Square &middot; Substack &middot; site architecture for AI crawlability</p>
+          <div class="card-more">
+            <p>Ships client sites on custom code and off-the-shelf platforms alike, plus the JSON-LD schema and site architecture that make them readable by AI crawlers, not just search engines.</p>
+            <a href="portfolio.html" class="portfolio-link">See the results &rarr;</a>
+          </div>
         </div>
-        <div class="card">
+        <div class="card expandable">
           <h3 style="font-size:0.95rem;">Ops &amp; Content</h3>
           <p class="mt-16" style="color:var(--muted); font-size:14px;">ClickUp &middot; Canva &middot; Blotato (social media automation) &middot; Google Workspace</p>
+          <div class="card-more">
+            <p>Runs the ClickUp-based ops system and the Blotato social automation behind TaG Makes' own content pipeline and outreach.</p>
+            <a href="blog.html" class="portfolio-link">Read the blog &rarr;</a>
+          </div>
         </div>
       </div>
     </div>
@@ -458,5 +603,40 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var cards = document.querySelectorAll('.card.expandable');
+      cards.forEach(function (card) {
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-expanded', 'false');
+        card.addEventListener('click', function (e) {
+          if (e.target.closest('a')) return;
+          var isOpen = card.classList.toggle('is-open');
+          card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          cards.forEach(function (other) {
+            if (other !== card) {
+              other.classList.remove('is-open');
+              other.setAttribute('aria-expanded', 'false');
+            }
+          });
+        });
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+          }
+        });
+      });
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.card.expandable')) {
+          cards.forEach(function (c) {
+            c.classList.remove('is-open');
+            c.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
