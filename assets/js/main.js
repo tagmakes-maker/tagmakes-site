@@ -55,13 +55,10 @@ if (prefersReducedMotion) {
         el.style.transform = 'translateY(0)';
         // Clear the transform once the reveal finishes — a lingering non-"none"
         // transform creates a stacking context that traps absolutely-positioned
-        // overlay content (like expandable cards) behind later sections.
-        el.addEventListener('transitionend', function clearTransform(ev) {
-          if (ev.propertyName === 'transform') {
-            el.style.transform = '';
-            el.removeEventListener('transitionend', clearTransform);
-          }
-        });
+        // overlay content (like expandable cards) behind later sections. Use a
+        // timer rather than transitionend: that event doesn't reliably fire on
+        // backgrounded/throttled tabs, which would leave the transform stuck.
+        setTimeout(() => { el.style.transform = ''; }, 650);
         observer.unobserve(e.target);
       }
     });
