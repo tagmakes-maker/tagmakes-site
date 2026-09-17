@@ -42,32 +42,25 @@ const revealTargets = document.querySelectorAll('section, .scroll-reveal, .servi
 
 if (prefersReducedMotion) {
   // Skip animation — make everything visible immediately
-  revealTargets.forEach(el => {
-    el.style.opacity = '1';
-    el.style.transform = 'none';
-  });
+  revealTargets.forEach(el => el.classList.add('reveal-visible'));
 } else {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        const el = e.target;
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-        // Clear the transform once the reveal finishes — a lingering non-"none"
-        // transform creates a stacking context that traps absolutely-positioned
-        // overlay content (like expandable cards) behind later sections. Use a
-        // timer rather than transitionend: that event doesn't reliably fire on
-        // backgrounded/throttled tabs, which would leave the transform stuck.
-        setTimeout(() => { el.style.transform = ''; }, 650);
+        // Driven entirely by a CSS class (see styles.css .reveal-init /
+        // .reveal-visible) rather than inline styles cleared by a timer.
+        // The revealed rule sets transform: none directly, so there's no
+        // lingering non-"none" transform to trap absolutely-positioned
+        // overlay content (like expandable cards) behind later sections —
+        // no matter how soon after load the reveal fires.
+        e.target.classList.add('reveal-visible');
         observer.unobserve(e.target);
       }
     });
   }, { threshold: 0.1 });
 
   revealTargets.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(36px)';
-    el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+    el.classList.add('reveal-init');
     observer.observe(el);
   });
 }

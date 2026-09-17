@@ -710,9 +710,10 @@ strong { font-weight: 700; }
 }
 .footer-brand img { margin-bottom: 14px; }
 .footer-brand p { font-size: 13px; line-height: 1.7; color: #9A968F; }
-.footer-social { display: flex; gap: 16px; margin-top: 12px; }
-.footer-social a { font-size: 13px; color: #6B6860; transition: color 0.15s; }
+.footer-social { display: flex; gap: 14px; margin-top: 12px; align-items: center; }
+.footer-social a { display: flex; align-items: center; color: #6B6860; transition: color 0.15s; }
 .footer-social a:hover { color: #F4F2EE; }
+.footer-social svg { display: block; }
 
 .testimonials-grid {
   display: grid;
@@ -1000,8 +1001,22 @@ strong { font-weight: 700; }
   margin-left: 2px;
 }
 
+/* Scroll reveal: class-driven so the settled state is transform: none in
+   the rule itself — no inline transform left lingering to trap absolutely-
+   positioned overlay content (e.g. expandable cards) in a stacking context. */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-init.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .scroll-reveal-el { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .reveal-init { opacity: 1 !important; transform: none !important; transition: none !important; }
   .fade-up { animation: none; }
 }
 
